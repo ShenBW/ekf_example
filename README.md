@@ -15,12 +15,12 @@ $y_{k, i}$: distance measurement from beacon i at time k. $y_{k, i}=||b^{(i)} - 
 
 ### Equation
 
-Let $x = \begin{bmatrix} p_k \\ \dot{p_k} \end{bmatrix}$, $y = \begin{bmatrix} y_{k, 1} \\ y_{k, 2} \\ y_{k, 3} \\ y_{k, 4} \end{bmatrix}$, the model of the system is as follows:
+Let $x = \begin{bmatrix} p_k  \\ \dot{p_k} \end{bmatrix}$, $y = \begin{bmatrix} y_{k, 1}  \\ y_{k, 2}  \\ y_{k, 3}  \\ y_{k, 4} \end{bmatrix}$, the model of the system is as follows:
 
 $$
 \begin{equation}
 \begin{aligned}
-& x_{k+1} = \begin{bmatrix} I & I\Delta t \\ 0 & I \end{bmatrix}x_{k} \\
+& x_{k+1} = \begin{bmatrix} I & I\Delta t  \\ 0 & I \end{bmatrix}x_{k}  \\
 & y_k = h(x_k) + v_k, \: h_i(x_k) =  \sqrt{(x_{k, 1} - b_1^{(i)})^2 + (x_{k, 2} - b_2^{(i)})^2}
 \end{aligned}
 \end{equation}
